@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editkaro.in — Premium Video Editing Services</title>
+
+    <!-- Fonts + Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-wrap">
+            <div class="logo-mark"><i class="fa-solid fa-play"></i></div>
+            <div class="loader-bar"><span></span></div>
+            <p>Rendering magic…</p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Gamification Progress -->
+    <div id="progress-bar"></div>
+    <div id="badge-tray" aria-live="polite"></div>
+
+    <!-- Sticky CTA -->
+    <button id="sticky-cta" class="pulse"><i class="fa-solid fa-bolt"></i> Get a Quote</button>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-play-circle"></i>
+                Edit<span>karo</span>.in
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="navlink" href="#home">Home</a></li>
+                    <li><a class="navlink" href="#portfolio">Portfolio</a></li>
+                    <li><a class="navlink" href="#testimonials">Testimonials</a></li>
+                    <li><a class="navlink" href="#clients">Clients</a></li>
+                    <li><a class="navlink" href="#analytics">Analytics</a></li>
+                    <li><a class="navlink" href="#contact">Contact</a></li>
+                    <li>
+                        <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">
+                            <i class="fa-solid fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero with Video Background -->
+    <section id="home" class="hero section-observe">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto"
+            poster="https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=1200&auto=format&fit=crop">
+            <source src="https://cdn.coverr.co/videos/coverr-editing-room-8387/1080p.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <h1 class="title">CREATIVE VIDEO EDITING</h1>
+            <p class="subtitle">From reels to documentaries — we turn raw footage into scroll-stopping stories.</p>
+            <div class="cta-row">
+                <a href="#portfolio" class="btn ripple">View Work</a>
+                <a href="#contact" class="btn btn-accent ripple">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section-observe">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Portfolio</h2>
+                <p>Explore categories and preview edits live on hover.</p>
+            </div>
+
+            <div class="controls">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="short">Short Form</button>
+                    <button class="filter-btn" data-filter="long">Long Form</button>
+                    <button class="filter-btn" data-filter="gaming">Gaming</button>
+                    <button class="filter-btn" data-filter="football">Football</button>
+                    <button class="filter-btn" data-filter="ecom">eCommerce</button>
+                    <button class="filter-btn" data-filter="anime">Anime</button>
+                </div>
+                <div class="search">
+                    <input id="searchInput" type="search" placeholder="Search by title, tag or category…" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Item 1 -->
+                <article class="portfolio-card glass section-observe" data-category="short"
+                    data-tags="instagram reels short">
+                    <figure>
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop"
+                            alt="Social Media Reel" />
+                        <figcaption>
+                            <h3>Social Media Reel</h3>
+                            <p>High-retention Instagram reel edits.</p>
+                            <div class="tags"><span>#instagram</span><span>#reels</span><span>#short</span></div>
+                        </figcaption>
+                    </figure>
+                    <div class="preview" data-video="https://cdn.coverr.co/videos/coverr-disco-ball-9417/1080p.mp4">
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="portfolio-card glass section-observe" data-category="long"
+                    data-tags="documentary long color grading">
+                    <figure>
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1554941426-5ba032c48d56?q=80&w=800&auto=format&fit=crop"
+                            alt="Documentary Style" />
+                        <figcaption>
+                            <h3>Documentary Style</h3>
+                            <p>30-minute cuts with cinematic color.</p>
+                            <div class="tags"><span>#documentary</span><span>#long</span><span>#grading</span></div>
+                        </figcaption>
+                    </figure>
+                    <div class="preview" data-video="https://cdn.coverr.co/videos/coverr-city-rain-4456/1080p.mp4">
+                    </div>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="portfolio-card glass section-observe" data-category="gaming"
+                    data-tags="gaming montage effects">
+                    <figure>
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=800&auto=format&fit=crop"
+                            alt="Gaming Montage" />
+                        <figcaption>
+                            <h3>Gaming Montage</h3>
+                            <p>Snappy highlights + VFX beats.</p>
+                            <div class="tags"><span>#gaming</span><span>#montage</span><span>#effects</span></div>
+                        </figcaption>
+                    </figure>
+                    <div class="preview" data-video="https://cdn.coverr.co/videos/coverr-the-gamer-9519/1080p.mp4">
+                    </div>
+                </article>
+
+                <!-- Item 4 -->
+                <article class="portfolio-card glass section-observe" data-category="football"
+                    data-tags="football sports highlights">
+                    <figure>
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1575446913068-df1c1c22786a?q=80&w=800&auto=format&fit=crop"
+                            alt="Football Highlights" />
+                        <figcaption>
+                            <h3>Football Highlights</h3>
+                            <p>Dynamic player spotlights with slo-mo.</p>
+                            <div class="tags"><span>#football</span><span>#sports</span><span>#highlights</span></div>
+                        </figcaption>
+                    </figure>
+                    <div class="preview" data-video="https://cdn.coverr.co/videos/coverr-football-game-7841/1080p.mp4">
+                    </div>
+                </article>
+
+                <!-- Item 5 -->
+                <article class="portfolio-card glass section-observe" data-category="ecom"
+                    data-tags="ecommerce ads product">
+                    <figure>
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=800&auto=format&fit=crop"
+                            alt="Product Advertisement" />
+                        <figcaption>
+                            <h3>Product Advertisement</h3>
+                            <p>Scroll-stopping product ads.</p>
+                            <div class="tags"><span>#ecommerce</span><span>#ads</span><span>#product</span></div>
+                        </figcaption>
+                    </figure>
+                    <div class="preview" data-video="https://cdn.coverr.co/videos/coverr-luxury-watch-1527/1080p.mp4">
+                    </div>
+                </article>
+
+                <!-- Item 6 -->
+                <article class="portfolio-card glass section-observe" data-category="anime"
+                    data-tags="anime compilation effects">
+                    <figure>
+                        <img loading="lazy"
+                            src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800&auto=format&fit=crop"
+                            alt="Anime Edit" />
+                        <figcaption>
+                            <h3>Anime Edit</h3>
+                            <p>Velocity, shakes & syncs.</p>
+                            <div class="tags"><span>#anime</span><span>#compilation</span><span>#effects</span></div>
+                        </figcaption>
+                    </figure>
+                    <div class="preview"
+                        data-video="https://cdn.coverr.co/videos/coverr-colors-in-motion-6998/1080p.mp4"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section id="testimonials" class="testimonials section-observe">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Clients Say</h2>
+                <p>Real results from real creators & brands.</p>
+            </div>
+
+            <div class="carousel glass" aria-live="polite">
+                <button class="carousel-btn prev" aria-label="Previous"><i
+                        class="fa-solid fa-chevron-left"></i></button>
+                <div class="carousel-track">
+                    <article class="tcard">
+                        <p>“Our engagement jumped 150% after their reel revamps.”</p>
+                        <div class="author">
+                            <img loading="lazy" src="https://randomuser.me/api/portraits/women/65.jpg"
+                                alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4><small>Marketing Director, TechStart</small>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="tcard">
+                        <p>“Football edits went viral — pro quality, quick turnaround!”</p>
+                        <div class="author">
+                            <img loading="lazy" src="https://randomuser.me/api/portraits/men/32.jpg"
+                                alt="Michael Torres">
+                            <div>
+                                <h4>Michael Torres</h4><small>Manager, City FC</small>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="tcard">
+                        <p>“Product videos boosted sales by 40%. They get conversion.”</p>
+                        <div class="author">
+                            <img loading="lazy" src="https://randomuser.me/api/portraits/women/44.jpg"
+                                alt="Emma Reynolds">
+                            <div>
+                                <h4>Emma Reynolds</h4><small>Owner, FashionHub</small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="carousel-btn next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="dots" id="tDots"></div>
+        </div>
+    </section>
+
+    <!-- Client Logos Carousel -->
+    <section id="clients" class="clients section-observe">
+        <div class="container">
+            <div class="section-title">
+                <h2>Trusted By</h2>
+                <p>Brands that love our cuts.</p>
+            </div>
+            <div class="logo-belt glass">
+                <div class="belt-track">
+                    <!-- repeatable logos -->
+                    <img loading="lazy" src="https://dummyimage.com/180x60/6a11cb/ffffff&text=TechStart"
+                        alt="TechStart">
+                    <img loading="lazy" src="https://dummyimage.com/180x60/2575fc/ffffff&text=City+FC" alt="City FC">
+                    <img loading="lazy" src="https://dummyimage.com/180x60/ff3366/ffffff&text=FashionHub"
+                        alt="FashionHub">
+                    <img loading="lazy" src="https://dummyimage.com/180x60/111111/ffffff&text=ShopEZ" alt="ShopEZ">
+                    <img loading="lazy" src="https://dummyimage.com/180x60/444444/ffffff&text=Gamely" alt="Gamely">
+                    <!-- duplicate for seamless loop -->
+                    <img loading="lazy" src="https://dummyimage.com/180x60/6a11cb/ffffff&text=TechStart" alt="">
+                    <img loading="lazy" src="https://dummyimage.com/180x60/2575fc/ffffff&text=City+FC" alt="">
+                    <img loading="lazy" src="https://dummyimage.com/180x60/ff3366/ffffff&text=FashionHub" alt="">
+                    <img loading="lazy" src="https://dummyimage.com/180x60/111111/ffffff&text=ShopEZ" alt="">
+                    <img loading="lazy" src="https://dummyimage.com/180x60/444444/ffffff&text=Gamely" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics (JS-only demo) -->
+    <section id="analytics" class="analytics section-observe">
+        <div class="container">
+            <div class="section-title">
+                <h2>Live Analytics (Demo)</h2>
+                <p>Real-time feel with simulated data (no external services).</p>
+            </div>
+            <div class="cards">
+                <div class="acard glass">
+                    <h4>Live Visitors</h4>
+                    <div class="big" id="liveVisitors">–</div>
+                    <small>Simulated ± jitter</small>
+                </div>
+                <div class="acard glass">
+                    <h4>Avg. Session</h4>
+                    <div class="big" id="sessionTime">00:00</div>
+                    <small>Since you opened the page</small>
+                </div>
+                <div class="acard glass">
+                    <h4>Conversion Rate</h4>
+                    <div class="big" id="convRate">–%</div>
+                    <small>Clicks on CTA / views</small>
+                </div>
+            </div>
+            <canvas id="sparkline" width="900" height="180" aria-label="Traffic sparkline"></canvas>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section-observe">
+        <div class="container contact-grid glass">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Tell us your goals — we’ll craft edits that perform.</p>
+
+                <div class="contact-details">
+                    <div><i class="fas fa-envelope"></i>
+                        <p>info@editkaro.in</p>
+                    </div>
+                    <div><i class="fas fa-phone"></i>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div><i class="fas fa-map-marker-alt"></i>
+                        <p>Mumbai, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject" />
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn ripple">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>Edit<span>karo</span>.in</h3>
+                <p>Transforming visions into motion.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a class="navlink" href="#home">Home</a></li>
+                    <li><a class="navlink" href="#portfolio">Portfolio</a></li>
+                    <li><a class="navlink" href="#testimonials">Testimonials</a></li>
+                    <li><a class="navlink" href="#clients">Clients</a></li>
+                    <li><a class="navlink" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Social Media Edits</a></li>
+                    <li><a href="#">Video Ads</a></li>
+                    <li><a href="#">Documentaries</a></li>
+                    <li><a href="#">Gaming Videos</a></li>
+                    <li><a href="#">Color Grading</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> Editkaro.in — All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Quote Modal (opens from sticky CTA) -->
+    <dialog id="quoteModal" class="glass">
+        <button class="close-modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Quick Quote</h3>
+        <form id="quoteForm" class="quote-form">
+            <input type="text" name="qname" placeholder="Your Name" required />
+            <input type="email" name="qemail" placeholder="Your Email" required />
+            <select name="qservice" required>
+                <option value="">Select Service</option>
+                <option>Short Form Reels</option>
+                <option>Long Form Edit</option>
+                <option>Gaming Montage</option>
+                <option>Product Ad</option>
+                <option>Color Grading</option>
+            </select>
+            <button class="btn btn-accent ripple" type="submit">Request Quote</button>
+        </form>
+    </dialog>
+
+    <!-- Newsletter Popup -->
+    <dialog id="newsletter" class="glass">
+        <button class="close-modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Join Our Creator List</h3>
+        <p>Get tips, trends & free LUTs monthly.</p>
+        <form id="newsForm" class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button class="btn ripple" type="submit">Subscribe</button>
+        </form>
+    </dialog>
+
+    <!-- AI Chatbot -->
+    <button id="chatToggle" class="chat-toggle"><i class="fa-solid fa-comments"></i></button>
+    <div id="chatbot" class="chatbot glass" aria-live="polite">
+        <div class="chat-head">
+            <strong>EK Assistant</strong>
+            <button id="chatClose" class="icon-btn" aria-label="Close chat"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="chatLog" class="chat-log">
+            <div class="msg bot">Hi! Ask me about services, pricing, or delivery time.</div>
+        </div>
+        <form id="chatForm" class="chat-input">
+            <input id="chatText" type="text" placeholder="Type your question…" autocomplete="off" />
+            <button class="btn btn-accent ripple" type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
